@@ -1,0 +1,564 @@
+{% extends 'siteweb/site.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+          <section class="home">
+        <div class="home-content">
+            <h3>La santé au service</h3>
+            <h1>ma pharmacie</h1>
+            <h3>and i'm a <span class="text"></span></h3>
+            <p>La dispensation des medicaments dans une officine de pharmacie se fait sous l'entiere<br> responsabilité du pharmacien,<br> que ce soit des medicaments délivré sur prescription ,édicale ou non.</p>
+            <div class="home-sci">
+                <a href="#"><i class="bx bxl-facebook "></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+                <a href="#"><i class="bx bxl-whatsapp"></i></a>
+                <a href="#"><i class="bx bxl-tiktok"></i></a>
+            </div>
+            <a href="#" class="btn-box">More About Me</a>
+        </div>
+     </section>
+   
+    <section class="about" id="about">
+        <h1 class="heading"> <span> About </span> Us </h1>
+        <div class="row">
+            <div class="video-container">
+                <video src="{{asset('myFarm/images/video.mp4')}}" loop autoplay muted></video>
+                <h3>la santé au service</h3>
+            </div>
+            <div class="content">
+                <h3>About Us</h3>
+                <p>Notre Pharmacie en ligne offre divers produits qui permet de prendre soin de votre santé ou de votre beauté, mais aussi toutes les garanties qu'elle peut vous offrir</p>
+                <p>Au sein de l'officine, le pharmacien peut également faire le suivi de la médication du patient; adapter les posologies; renouveler les traitements des pathologies chroniaues et proposer des modifications de thérapeutique en accord avec le médécin</p>
+                <a href="#" class="btn">Voir plus</a>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="icons-container">
+        <div class="icons">
+            <img src="{{asset('myFarm/images/panier-icone-rendu-3d.jpg')}}" alt="" width="100px" height="100px">
+            <div class="info">
+                <h3>free delivery</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="{{asset('myFarm/images/OLAZ6B0-removebg-preview.png')}}" alt="" width="100px" height="100px">
+            <div class="info">
+                <h3>10 Days Returns</h3>
+                <span>MoneyBack guarantee</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="{{('myFarm/images/sl_100222_53080_09-removebg-preview.png')}}" alt="" width="100px" height="100px">
+            <div class="info">
+                <h3>Offer & Gifts</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="{{('myFarm/images/carte-removebg-preview.png')}}" alt="" width="100px" height="80px">
+            <div class="info">
+                <h3>Secure Payments</h3>
+                <span>protected by paypal</span>
+            </div>
+        </div>
+    </section>
+    <section class="products" id="products">
+        <h1 class="heading">latest <span>Products</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="{{('myFarm/images/2108.q705.020.S.m005.c10.healthcare medications.jpg')}}" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="detail.html" class="cart-btn">Ajouter au panier</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Capsule</h3>
+                    <div class="price"> 100FCFA <span></span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="{{('myFarm/images/product_04.png')}}" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">Ajouter au panier</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Vitamine</h3>
+                    <div class="price">590FCFA <span></span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="{{('myFarm/images/angle-eleve-feuilles-pilules-recipients-plastique-removebg-preview.png')}}" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">Ajouter au panier</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>pillule</h3>
+                    <div class="price"> 120FCFA <span></span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <img src="{{('myFarm/images/OZI9AS0-removebg-preview (2).png')}}" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">Ajouter au panier</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Antibiotique</h3>
+                    <div class="price"> 390FCFA <span></span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-17%</span>
+                <div class="image">
+                    <img src="{{('myFarm/images/product_05.png')}}" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">Ajouter au panier</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>CLAcore</h3>
+                    <div class="price"> 480FCFA <span></span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-3%</span>
+                <div class="image">
+                    <img src="{{('myFarm/images/product_06.png')}}" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">Ajouter au panier</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>poo-pourre</h3>
+                    <div class="price"> 270FCFA <span></span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-18%</span>
+                <div class="image">
+                    <img src="{{('myFarm/images/medoc-removebg-preview.png')}}" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">Ajouter au panier</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Cetylpure</h3>
+                    <div class="price"> 10800FCFA<span></span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="{{('myFarm/images/product_01.png')}}" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">Ajouter au panier</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Bioderma</h3>
+                    <div class="price"> 520FCFA <span></span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="{{('myFarm/images/product_03.png')}}" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">Ajouter au panier</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>coldcare</h3>
+                    <div class="price"> 750FCFA <span></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="review" id="review">
+    <h1 class="heading"> customer's <span>review</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>La dispensation des medicaments dans une officine de pharmacie se fait sous l'entiere<br> responsabilité du pharmacien,<br> que ce soit des medicaments délivré sur prescription ,édicale ou non.</p>
+            <div class="user">
+                <img src="{{('myFarm/images/doc.jpg')}}" alt="" width="60%" height="60%">
+                <div class="user-info">
+                    <h3>Oumeda Ndam</h3>
+                    <span>happy customer</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>La dispensation des medicaments dans une officine de pharmacie se fait sous l'entiere<br> responsabilité du pharmacien,<br> que ce soit des medicaments délivré sur prescription ,édicale ou non.</p>
+            <div class="user">
+                <img src="{{asset('myFarm/images/femme-noire-stethoscope-removebg-preview.png')}}" alt=""width="60%" height="60%">
+                <div class="user-info">
+                    <h3>Clelia joice</h3>
+                    <span>happy customer</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>La dispensation des medicaments dans une officine de pharmacie se fait sous l'entiere<br> responsabilité du pharmacien,<br> que ce soit des medicaments délivré sur prescription ,édicale ou non.</p>
+            <div class="user">
+                <img src="{{('myFarm/images/portrait-generaliste-heureux-tablette-numerique.jpg')}}" alt=""width="60%" height="60%">
+                <div class="user-info">
+                    <h3>Francis Ben</h3>
+                    <span>happy customer</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+    </div>
+</section>
+
+</section>
+<section class="Assistance" id="Assistance">
+    <h1 class="heading"><span>Assistance</span></h1>
+    <div class="swiper mySwiper container">
+
+        <div class="swiper-wrapper content">
+
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="{{('myFarm/images/doc.jpg')}}" alt="">
+                    </div>
+                    <div class="social-media"style="color: #333;">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-github"></i> 
+                    </div>
+                    <div class="name-profession"style="color: #333;">
+                        <span class="name">Julia Brenda</span>
+                        <span class="profession">
+                            Notre Experte dermathologue
+                        </span>
+                    </div>
+                    <div class="rating" style="color: #333;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="button" style="color: #333;">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Hire Me</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="{{('myFarm/images/femme-noire-stethoscope.jpg')}}" alt="">
+                    </div>
+                    <div class="social-media"style="color: #333;">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-github"></i> 
+                    </div>
+                    <div class="name-profession"style="color: #333;">
+                        <span class="name">Simone Audrey</span>
+                        <span class="profession">
+                            Notre Experte radiologiste
+                        </span>
+                    </div>
+                    <div class="rating" style="color: #333;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="button" style="color: #333;">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Hire Me</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="{{('myFarm/images/fille-docteur-medecine-travaillant-microscope-jeune-femme-scientifique-faisant-recherches-vaccins.jpg')}}" alt="">
+                    </div>
+                    <div class="social-media"style="color: #333;">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-github"></i> 
+                    </div>
+                    <div class="name-profession"style="color: #333;">
+                        <span class="name">Ange Naomie</span>
+                        <span class="profession">
+                            Notre Experte ophtamologue
+                        </span>
+                    </div>
+                    <div class="rating" style="color: #333;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="button" style="color: #333;">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Hire Me</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="{{('myFarm/images/portrait-generaliste-heureux-tablette-numerique.jpg')}}" alt="">
+                    </div>
+                    <div class="social-media"style="color: #333;">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-github"></i> 
+                    </div>
+                    <div class="name-profession"style="color: #333;">
+                        <span class="name">Brice junior</span>
+                        <span class="profession">
+                            Notre Expert dentiste
+                        </span>
+                    </div>
+                    <div class="rating" style="color: #333;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="button" style="color: #333;">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Hire Me</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="{{('myFarm/images/homme-africain-recevant-colis-employe-du-service-livraison.jpg')}}" alt="">
+                    </div>
+                    <div class="social-media"style="color: #333;">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-github"></i> 
+                    </div>
+                    <div class="name-profession"style="color: #333;">
+                        <span class="name">Patrice donald</span>
+                        <span class="profession">
+                            Notre livreur
+                        </span>
+                    </div>
+                    <div class="rating" style="color: #333;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="button" style="color: #333;">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Hire Me</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="{{('myFarm/images/gros-plan-livreur-donnant-colis-au-client (1).jpg')}}" alt="">
+                    </div>
+                    <div class="social-media"style="color: #333;">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-github"></i> 
+                    </div>
+                    <div class="name-profession"style="color: #333;">
+                        <span class="name">Jean Antoine </span>
+                        <span class="profession">
+                            Notre livreur
+                        </span>
+                    </div>
+                    <div class="rating" style="color: #333;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="button" style="color: #333;">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Hire Me</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="{{('myFarm/images/pharmacien-afro-americain-travaillant-pharmacie-pharmacie-hopital-soins-sante-africains.jpg')}}" alt="">
+                    </div>
+                    <div class="social-media"style="color: #333;">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-github"></i> 
+                    </div>
+                    <div class="name-profession"style="color: #333;">
+                        <span class="name">Lynda princesse</span>
+                        <span class="profession">
+                            Notre pharmacienne
+                        </span>
+                    </div>
+                    <div class="rating" style="color: #333;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="button" style="color: #333;">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Hire Me</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="{{('myFarm/images/women.jpg')}}" alt="">
+                    </div>
+                    <div class="social-media"style="color: #333;">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-github"></i> 
+                    </div>
+                    <div class="name-profession"style="color: #333;">
+                        <span class="name">Someone Name</span>
+                        <span class="profession">
+                            Web Developer
+                        </span>
+                    </div>
+                    <div class="rating" style="color: #333;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="button" style="color: #333;">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Hire Me</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="{{('myFarm/images/doc.jpg')}}" alt="">
+                    </div>
+                    <div class="social-media"style="color: #333;">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-github"></i> 
+                    </div>
+                    <div class="name-profession"style="color: #333;">
+                        <span class="name">Someone Name</span>
+                        <span class="profession">
+                            Web Developer
+                        </span>
+                    </div>
+                    <div class="rating" style="color: #333;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="button" style="color: #333;">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Hire Me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div> -->
+
+</section>
+
+    
+   
+     <section class="contact" id="contact"> 
+        
+        <div class="row">
+            <form action="">
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="number" placeholder="number" class="box">
+                <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+            <div class="image">
+                <img src="{{('myFarm/images/pharmacien-afro-americain-travaillant-pharmacie-pharmacie-hopital-soins-sante-africains.jpg')}}" alt="">
+            </div>
+        </div>
+</section> 
+{% endblock %}

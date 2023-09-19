@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Pharmacie index{% endblock %}
+
+{% block body %}
+    <h1>Pharmacie index</h1>
+      <div>
+        <a href="{{ path('app_produit_new') }}" class="btn btn-primary float-right mb-3">Create new</a>
+    </div>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Specialite</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for pharmacie in pharmacies %}
+            <tr>
+                <td>{{ pharmacie.id }}</td>
+                <td>{{ pharmacie.specialite }}</td>
+                <td>
+                    <a href="{{ path('app_pharmacie_show', {'id': pharmacie.id}) }}">show</a>
+                    <a href="{{ path('app_pharmacie_edit', {'id': pharmacie.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

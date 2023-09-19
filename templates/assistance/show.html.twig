@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Assistance{% endblock %}
+
+{% block body %}
+    <h1>Assistance</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ assistance.id }}</td>
+            </tr>
+            <tr>
+                <th>Message</th>
+                <td>{{ assistance.message }}</td>
+            </tr>
+            <tr>
+                <th>Reponse</th>
+                <td>{{ assistance.reponse }}</td>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <td>{{ assistance.date ? assistance.date|date('Y-m-d') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_assistance_index') }}">back to list</a>
+
+    <a href="{{ path('app_assistance_edit', {'id': assistance.id}) }}">edit</a>
+
+    {{ include('assistance/_delete_form.html.twig') }}
+{% endblock %}

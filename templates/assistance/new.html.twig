@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Assistance{% endblock %}
+
+{% block body %}
+    <h1>Create new Assistance</h1>
+
+    {{ include('assistance/_form.html.twig') }}
+
+    <a href="{{ path('app_assistance_index') }}">back to list</a>
+{% endblock %}
