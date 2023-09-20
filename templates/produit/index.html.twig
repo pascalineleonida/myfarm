@@ -1,19 +1,18 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Produits{% endblock %}
+{% block title %}Produit index{% endblock %}
 
 {% block body %}
     <h1>Produit index</h1>
-    <div>
-        <a href="{{ path('app_produit_new') }}" class="btn btn-primary float-right mb-3">Create new</a>
-    </div>
 
-    <table class="table table-hover table-bordered">
+    <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
                 <th>Code</th>
                 <th>Nom</th>
+                <th>Image</th>
+                <th>Prix</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -23,6 +22,8 @@
                 <td>{{ produit.id }}</td>
                 <td>{{ produit.code }}</td>
                 <td>{{ produit.nom }}</td>
+                <td>{{ produit.image }}</td>
+                <td>{{ produit.prix }}</td>
                 <td>
                     <a href="{{ path('app_produit_show', {'id': produit.id}) }}">show</a>
                     <a href="{{ path('app_produit_edit', {'id': produit.id}) }}">edit</a>
@@ -30,11 +31,11 @@
             </tr>
         {% else %}
             <tr>
-                <td colspan="4">no records found</td>
+                <td colspan="6">no records found</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-   
+    <a href="{{ path('app_produit_new') }}">Create new</a>
 {% endblock %}

@@ -70,6 +70,8 @@
     <section class="products" id="products">
         <h1 class="heading">latest <span>Products</span></h1>
         <div class="box-container">
+        {% for produit in produits %}
+            
             <div class="box">
                 <span class="discount">-10%</span>
                 <div class="image">
@@ -81,130 +83,12 @@
                     </div>
                 </div>
                 <div class="content">
-                    <h3>Capsule</h3>
+                    <h3>{{produit.nom}}</h3>
                     <div class="price"> 100FCFA <span></span></div>
                 </div>
             </div>
-            <div class="box">
-                <span class="discount">-15%</span>
-                <div class="image">
-                    <img src="{{('myFarm/images/product_04.png')}}" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">Ajouter au panier</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Vitamine</h3>
-                    <div class="price">590FCFA <span></span></div>
-                </div>
-            </div>
-            <div class="box">
-                <span class="discount">-5%</span>
-                <div class="image">
-                    <img src="{{('myFarm/images/angle-eleve-feuilles-pilules-recipients-plastique-removebg-preview.png')}}" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">Ajouter au panier</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>pillule</h3>
-                    <div class="price"> 120FCFA <span></span></div>
-                </div>
-            </div>
-            <div class="box">
-                <span class="discount">-20%</span>
-                <div class="image">
-                    <img src="{{('myFarm/images/OZI9AS0-removebg-preview (2).png')}}" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">Ajouter au panier</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Antibiotique</h3>
-                    <div class="price"> 390FCFA <span></span></div>
-                </div>
-            </div>
-            <div class="box">
-                <span class="discount">-17%</span>
-                <div class="image">
-                    <img src="{{('myFarm/images/product_05.png')}}" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">Ajouter au panier</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>CLAcore</h3>
-                    <div class="price"> 480FCFA <span></span></div>
-                </div>
-            </div>
-            <div class="box">
-                <span class="discount">-3%</span>
-                <div class="image">
-                    <img src="{{('myFarm/images/product_06.png')}}" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">Ajouter au panier</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>poo-pourre</h3>
-                    <div class="price"> 270FCFA <span></span></div>
-                </div>
-            </div>
-            <div class="box">
-                <span class="discount">-18%</span>
-                <div class="image">
-                    <img src="{{('myFarm/images/medoc-removebg-preview.png')}}" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">Ajouter au panier</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Cetylpure</h3>
-                    <div class="price"> 10800FCFA<span></span></div>
-                </div>
-            </div>
-            <div class="box">
-                <span class="discount">-10%</span>
-                <div class="image">
-                    <img src="{{('myFarm/images/product_01.png')}}" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">Ajouter au panier</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Bioderma</h3>
-                    <div class="price"> 520FCFA <span></span></div>
-                </div>
-            </div>
-            <div class="box">
-                <span class="discount">-5%</span>
-                <div class="image">
-                    <img src="{{('myFarm/images/product_03.png')}}" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">Ajouter au panier</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>coldcare</h3>
-                    <div class="price"> 750FCFA <span></span></div>
-                </div>
-            </div>
+        {% endfor %}
+            
         </div>
     </section>
 
