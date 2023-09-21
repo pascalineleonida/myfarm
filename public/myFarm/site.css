@@ -45,7 +45,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 0px 10%;
     background: rgb(235, 219, 219);
     display: flex;
     justify-content: space-between;
@@ -87,7 +87,7 @@ header .logo span{
      width: 100%;
      justify-content: space-between;
      height: 100vh;
-     background: url(images/femme-noire-stethoscope.jpg) no-repeat;
+     background: url(images/hero-side-bg.png) ;
      margin-top: 5%;
      background-size: cover;
      background-position: center;

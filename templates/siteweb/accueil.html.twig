@@ -5,10 +5,11 @@
 {% block body %}
 
           <section class="home">
+            <img src="{{asset('myFarm/images/bbb-removebg-preview.png')}}" alt="" width="50%" height="118%" style="margin-top: -5%; margin-left: -5%;">
         <div class="home-content">
-            <h3>La santé au service</h3>
-            <h1>ma pharmacie</h1>
-            <h3>and i'm a <span class="text"></span></h3>
+            <h3>votre pharmacie proche de chez vous</h3>
+            <h3 style="color: green;">Avec ma pharmacie votre santé est notre priorité</h3>
+            <h3>de nos jour... <span class="text"></span></h3>
             <p>La dispensation des medicaments dans une officine de pharmacie se fait sous l'entiere<br> responsabilité du pharmacien,<br> que ce soit des medicaments délivré sur prescription ,édicale ou non.</p>
             <div class="home-sci">
                 <a href="#"><i class="bx bxl-facebook "></i></a>
@@ -53,14 +54,14 @@
             </div>
         </div>
         <div class="icons">
-            <img src="{{('myFarm/images/sl_100222_53080_09-removebg-preview.png')}}" alt="" width="100px" height="100px">
+            <img src="{{asset('myFarm/images/sl_100222_53080_09-removebg-preview.png')}}" alt="" width="100px" height="100px">
             <div class="info">
                 <h3>Offer & Gifts</h3>
                 <span>on all orders</span>
             </div>
         </div>
         <div class="icons">
-            <img src="{{('myFarm/images/carte-removebg-preview.png')}}" alt="" width="100px" height="80px">
+            <img src="{{asset('myFarm/images/carte-removebg-preview.png')}}" alt="" width="100px" height="80px">
             <div class="info">
                 <h3>Secure Payments</h3>
                 <span>protected by paypal</span>
@@ -73,14 +74,13 @@
         {% for produit in produits %}
             
             <div class="box">
-                <span class="discount">-10%</span>
                 <div class="image">
-                    <img src="{{('myFarm/images/2108.q705.020.S.m005.c10.healthcare medications.jpg')}}" alt="">
-                    <div class="icons">
+                    <img src="{{asset('myFarm/images/2108.q705.020.S.m005.c10.healthcare medications.jpg')}}" alt="">
+                    <!-- <div class="icons">
                         <a href="#" class="fas fa-heart"></a>
                         <a href="detail.html" class="cart-btn">Ajouter au panier</a>
                         <a href="#" class="fas fa-share"></a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="content">
                     <h3>{{produit.nom}}</h3>
@@ -105,7 +105,7 @@
             </div>
             <p>La dispensation des medicaments dans une officine de pharmacie se fait sous l'entiere<br> responsabilité du pharmacien,<br> que ce soit des medicaments délivré sur prescription ,édicale ou non.</p>
             <div class="user">
-                <img src="{{('myFarm/images/doc.jpg')}}" alt="" width="60%" height="60%">
+                <img src="{{asset('myFarm/images/doc.jpg')}}" alt="" width="60%" height="60%">
                 <div class="user-info">
                     <h3>Oumeda Ndam</h3>
                     <span>happy customer</span>
@@ -141,7 +141,7 @@
             </div>
             <p>La dispensation des medicaments dans une officine de pharmacie se fait sous l'entiere<br> responsabilité du pharmacien,<br> que ce soit des medicaments délivré sur prescription ,édicale ou non.</p>
             <div class="user">
-                <img src="{{('myFarm/images/portrait-generaliste-heureux-tablette-numerique.jpg')}}" alt=""width="60%" height="60%">
+                <img src="{{asset('myFarm/images/portrait-generaliste-heureux-tablette-numerique.jpg')}}" alt=""width="60%" height="60%">
                 <div class="user-info">
                     <h3>Francis Ben</h3>
                     <span>happy customer</span>
@@ -162,7 +162,7 @@
             <div class="swiper-slide card">
                 <div class="card-content">
                     <div class="image">
-                        <img src="{{('myFarm/images/doc.jpg')}}" alt="">
+                        <img src="{{asset('myFarm/images/doc.jpg')}}" alt="">
                     </div>
                     <div class="social-media"style="color: #333;">
                         <i class="fa-brands fa-facebook"></i>
@@ -191,7 +191,7 @@
             <div class="swiper-slide card">
                 <div class="card-content">
                     <div class="image">
-                        <img src="{{('myFarm/images/femme-noire-stethoscope.jpg')}}" alt="">
+                        <img src="{{asset('myFarm/images/femme-noire-stethoscope.jpg')}}" alt="">
                     </div>
                     <div class="social-media"style="color: #333;">
                         <i class="fa-brands fa-facebook"></i>
@@ -220,7 +220,7 @@
             <div class="swiper-slide card">
                 <div class="card-content">
                     <div class="image">
-                        <img src="{{('myFarm/images/fille-docteur-medecine-travaillant-microscope-jeune-femme-scientifique-faisant-recherches-vaccins.jpg')}}" alt="">
+                        <img src="{{asset('myFarm/images/fille-docteur-medecine-travaillant-microscope-jeune-femme-scientifique-faisant-recherches-vaccins.jpg')}}" alt="">
                     </div>
                     <div class="social-media"style="color: #333;">
                         <i class="fa-brands fa-facebook"></i>
@@ -249,7 +249,7 @@
             <div class="swiper-slide card">
                 <div class="card-content">
                     <div class="image">
-                        <img src="{{('myFarm/images/portrait-generaliste-heureux-tablette-numerique.jpg')}}" alt="">
+                        <img src="{{asset('myFarm/images/portrait-generaliste-heureux-tablette-numerique.jpg')}}" alt="">
                     </div>
                     <div class="social-media"style="color: #333;">
                         <i class="fa-brands fa-facebook"></i>
@@ -278,7 +278,7 @@
             <div class="swiper-slide card">
                 <div class="card-content">
                     <div class="image">
-                        <img src="{{('myFarm/images/homme-africain-recevant-colis-employe-du-service-livraison.jpg')}}" alt="">
+                        <img src="{{asset('myFarm/images/homme-africain-recevant-colis-employe-du-service-livraison.jpg')}}" alt="">
                     </div>
                     <div class="social-media"style="color: #333;">
                         <i class="fa-brands fa-facebook"></i>
@@ -307,7 +307,7 @@
             <div class="swiper-slide card">
                 <div class="card-content">
                     <div class="image">
-                        <img src="{{('myFarm/images/gros-plan-livreur-donnant-colis-au-client (1).jpg')}}" alt="">
+                        <img src="{{asset('myFarm/images/gros-plan-livreur-donnant-colis-au-client (1).jpg')}}" alt="">
                     </div>
                     <div class="social-media"style="color: #333;">
                         <i class="fa-brands fa-facebook"></i>
@@ -336,7 +336,7 @@
             <div class="swiper-slide card">
                 <div class="card-content">
                     <div class="image">
-                        <img src="{{('myFarm/images/pharmacien-afro-americain-travaillant-pharmacie-pharmacie-hopital-soins-sante-africains.jpg')}}" alt="">
+                        <img src="{{asset('myFarm/images/pharmacien-afro-americain-travaillant-pharmacie-pharmacie-hopital-soins-sante-africains.jpg')}}" alt="">
                     </div>
                     <div class="social-media"style="color: #333;">
                         <i class="fa-brands fa-facebook"></i>
@@ -365,7 +365,7 @@
             <div class="swiper-slide card">
                 <div class="card-content">
                     <div class="image">
-                        <img src="{{('myFarm/images/women.jpg')}}" alt="">
+                        <img src="{{asset('myFarm/images/women.jpg')}}" alt="">
                     </div>
                     <div class="social-media"style="color: #333;">
                         <i class="fa-brands fa-facebook"></i>
@@ -394,7 +394,7 @@
             <div class="swiper-slide card">
                 <div class="card-content">
                     <div class="image">
-                        <img src="{{('myFarm/images/doc.jpg')}}" alt="">
+                        <img src="{{asset('myFarm/images/doc.jpg')}}" alt="">
                     </div>
                     <div class="social-media"style="color: #333;">
                         <i class="fa-brands fa-facebook"></i>
@@ -441,7 +441,7 @@
                 <input type="submit" value="send message" class="btn">
             </form>
             <div class="image">
-                <img src="{{('myFarm/images/pharmacien-afro-americain-travaillant-pharmacie-pharmacie-hopital-soins-sante-africains.jpg')}}" alt="">
+                <img src="{{asset('myFarm/images/pharmacien-afro-americain-travaillant-pharmacie-pharmacie-hopital-soins-sante-africains.jpg')}}" alt="">
             </div>
         </div>
 </section> 

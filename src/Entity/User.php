@@ -19,6 +19,11 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\Column(length: 180, unique: true)]
     private ?string $email = null;
+    private ?string $code = null;
+    private ?string $nom = null;
+    private ?string $prenom = null;
+    private ?string $adresse = null;
+    private ?string $tel = null;
 
     #[ORM\Column]
     private array $roles = [];
@@ -28,21 +33,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     #[ORM\Column]
     private ?string $password = null;
-
-    #[ORM\Column(length: 255)]
-    private ?string $prenom = null;
-
-    #[ORM\Column(length: 255)]
-    private ?string $nom = null;
-
-    #[ORM\Column(length: 255)]
-    private ?string $adresse = null;
-
-    #[ORM\Column]
-    private ?int $code = null;
-
-    #[ORM\Column]
-    private ?int $tel = null;
 
     public function getId(): ?int
     {
@@ -60,6 +50,71 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
         return $this;
     }
+    
+    public function getcode(): ?int
+    {
+        return $this->code;
+    }
+
+    public function setcode(int $code): static
+    {
+        $this->code = $code;
+
+        return $this;
+    }
+    
+    
+    public function getnom(): ?string
+    {
+        return $this->nom;
+    }
+
+    public function setnom(string $nom): static
+    {
+        $this->nom = $nom;
+
+        return $this;
+    }
+    
+    public function getprenom(): ?string
+    {
+        return $this->prenom;
+    }
+
+    public function setprenom(string $prenom): static
+    {
+        $this->prenom = $prenom;
+
+        return $this;
+    }
+    
+    
+    public function getadresse(): ?string
+    {
+        return $this->adresse;
+    }
+
+    public function setadresse(string $adresse): static
+    {
+        $this->adresse = $adresse;
+
+        return $this;
+    }
+    
+    public function gettel(): ?int
+    {
+        return $this->tel;
+    }
+
+    public function settel(int $tel): static
+    {
+        $this->tel = $tel;
+
+        return $this;
+    }
+    
+    
+    
 
     /**
      * A visual identifier that represents this user.
@@ -70,6 +125,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         return (string) $this->email;
     }
+    
 
     /**
      * @deprecated since Symfony 5.3, use getUserIdentifier instead
@@ -78,6 +134,8 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         return (string) $this->email;
     }
+    
+    
 
     /**
      * @see UserInterface
@@ -131,65 +189,5 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
-    }
-
-    public function getPrenom(): ?string
-    {
-        return $this->prenom;
-    }
-
-    public function setPrenom(string $prenom): static
-    {
-        $this->prenom = $prenom;
-
-        return $this;
-    }
-
-    public function getNom(): ?string
-    {
-        return $this->nom;
-    }
-
-    public function setNom(string $nom): static
-    {
-        $this->nom = $nom;
-
-        return $this;
-    }
-
-    public function getAdresse(): ?string
-    {
-        return $this->adresse;
-    }
-
-    public function setAdresse(string $adresse): static
-    {
-        $this->adresse = $adresse;
-
-        return $this;
-    }
-
-    public function getCode(): ?int
-    {
-        return $this->code;
-    }
-
-    public function setCode(int $code): static
-    {
-        $this->code = $code;
-
-        return $this;
-    }
-
-    public function getTel(): ?int
-    {
-        return $this->tel;
-    }
-
-    public function setTel(int $tel): static
-    {
-        $this->tel = $tel;
-
-        return $this;
     }
 }
