@@ -5,31 +5,31 @@
 {% block body %}
 
           <section class="home">
-            <img src="{{asset('myFarm/images/bbb-removebg-preview.png')}}" alt="" width="50%" height="118%" style="margin-top: -5%; margin-left: -5%;">
+            <img src="{{asset('myFarm/images/2108.q705.020.S.m005.c10.healthcare_medications-removebg-preview.png')}}" alt="" width="80%" height="80%" style="margin-top: -5%; margin-left: -8%;">
         <div class="home-content">
             <h3>votre pharmacie proche de chez vous</h3>
             <h3 style="color: green;">Avec ma pharmacie votre santé est notre priorité</h3>
-            <h3>de nos jour... <span class="text"></span></h3>
-            <p>La dispensation des medicaments dans une officine de pharmacie se fait sous l'entiere<br> responsabilité du pharmacien,<br> que ce soit des medicaments délivré sur prescription ,édicale ou non.</p>
+            {# <h3>de nos jour... <span class="text"></span></h3> #}
+            <p>La dispensation des medicaments dans une officine de pharmacie se fait sous l'entiere<br> responsabilité du pharmacien,<br> que ce soit des medicaments délivré sur prescription médicale ou non.</p>
             <div class="home-sci">
                 <a href="#"><i class="bx bxl-facebook "></i></a>
                 <a href="#"><i class="bx bxl-instagram"></i></a>
                 <a href="#"><i class="bx bxl-whatsapp"></i></a>
                 <a href="#"><i class="bx bxl-tiktok"></i></a>
             </div>
-            <a href="#" class="btn-box">More About Me</a>
+            <a href="#" class="btn-box">savoir plus</a>
         </div>
      </section>
    
     <section class="about" id="about">
-        <h1 class="heading"> <span> About </span> Us </h1>
+        <h1 class="heading"> <span> A propos </span> De nous </h1>
         <div class="row">
             <div class="video-container">
                 <video src="{{asset('myFarm/images/video.mp4')}}" loop autoplay muted></video>
                 <h3>la santé au service</h3>
             </div>
             <div class="content">
-                <h3>About Us</h3>
+                <h3>A propos de nous</h3>
                 <p>Notre Pharmacie en ligne offre divers produits qui permet de prendre soin de votre santé ou de votre beauté, mais aussi toutes les garanties qu'elle peut vous offrir</p>
                 <p>Au sein de l'officine, le pharmacien peut également faire le suivi de la médication du patient; adapter les posologies; renouveler les traitements des pathologies chroniaues et proposer des modifications de thérapeutique en accord avec le médécin</p>
                 <a href="#" class="btn">Voir plus</a>
@@ -69,18 +69,24 @@
         </div>
     </section>
     <section class="products" id="products">
-        <h1 class="heading">latest <span>Products</span></h1>
+        <h1 class="heading">Nos <span>Products</span></h1>
         <div class="box-container">
         {% for produit in produits %}
             
             <div class="box">
                 <div class="image">
-                    <img src="{{asset('myFarm/images/2108.q705.020.S.m005.c10.healthcare medications.jpg')}}" alt="">
-                    <!-- <div class="icons">
+                    <img src="{{asset('myFarm/images/paracetamol.jpg')}}" alt="">
+
+                    <div class="icons">
+                      <a href="{{path("cart_add",{id: produit.id})}}" class="btn btn-success">
+                        <i class="bi-bi-card-plus">Ajouter</i>
+                     </a>
+                    </div> 
+                     {# <div class="icons">
                         <a href="#" class="fas fa-heart"></a>
                         <a href="detail.html" class="cart-btn">Ajouter au panier</a>
                         <a href="#" class="fas fa-share"></a>
-                    </div> -->
+                    </div>  #}
                 </div>
                 <div class="content">
                     <h3>{{produit.nom}}</h3>
@@ -93,7 +99,7 @@
     </section>
 
     <section class="review" id="review">
-    <h1 class="heading"> customer's <span>review</span></h1>
+    <h1 class="heading"> vos <span>temoignage</span></h1>
     <div class="box-container">
         <div class="box">
             <div class="stars">
@@ -123,7 +129,7 @@
             </div>
             <p>La dispensation des medicaments dans une officine de pharmacie se fait sous l'entiere<br> responsabilité du pharmacien,<br> que ce soit des medicaments délivré sur prescription ,édicale ou non.</p>
             <div class="user">
-                <img src="{{asset('myFarm/images/femme-noire-stethoscope-removebg-preview.png')}}" alt=""width="60%" height="60%">
+                <img src="{{asset('myFarm/images/doc.jpg')}}" alt=""width="60%" height="60%">
                 <div class="user-info">
                     <h3>Clelia joice</h3>
                     <span>happy customer</span>
@@ -183,8 +189,9 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="button" style="color: #333;">
-                        <button class="aboutMe">About Me</button>
-                        <button class="hireMe">Hire Me</button>
+                       <a href="A propos.html.twig"><button class="hireMe">A propos de moi</button></a>
+                        <a href="contact.html.twig"><button class="hireMe">contactez moi</button></a>
+
                     </div>
                 </div>
             </div>
@@ -212,8 +219,8 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="button" style="color: #333;">
-                        <button class="aboutMe">About Me</button>
-                        <button class="hireMe">Hire Me</button>
+                        <button class="aboutMe">A propos de moi</button>
+                        <button class="hireMe">contactez moi</button>
                     </div>
                 </div>
             </div>
@@ -241,8 +248,8 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="button" style="color: #333;">
-                        <button class="aboutMe">About Me</button>
-                        <button class="hireMe">Hire Me</button>
+                        <button class="aboutMe">A propos de moi</button>
+                        <button class="hireMe">contactez moi</button>
                     </div>
                 </div>
             </div>
@@ -270,8 +277,8 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="button" style="color: #333;">
-                        <button class="aboutMe">About Me</button>
-                        <button class="hireMe">Hire Me</button>
+                        <button class="aboutMe">A propos de moi</button>
+                        <button class="hireMe">contactez moi</button>
                     </div>
                 </div>
             </div>
@@ -299,8 +306,8 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="button" style="color: #333;">
-                        <button class="aboutMe">About Me</button>
-                        <button class="hireMe">Hire Me</button>
+                        <button class="aboutMe">A propos de moi</button>
+                        <button class="hireMe">contactez moi</button>
                     </div>
                 </div>
             </div>
@@ -328,8 +335,8 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="button" style="color: #333;">
-                        <button class="aboutMe">About Me</button>
-                        <button class="hireMe">Hire Me</button>
+                        <button class="aboutMe">A propos de moi</button>
+                        <button class="hireMe">contactez moi</button>
                     </div>
                 </div>
             </div>
@@ -357,8 +364,8 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="button" style="color: #333;">
-                        <button class="aboutMe">About Me</button>
-                        <button class="hireMe">Hire Me</button>
+                        <button class="aboutMe">A propos de moi</button>
+                        <button class="hireMe">contactez moi</button>
                     </div>
                 </div>
             </div>
@@ -386,8 +393,8 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="button" style="color: #333;">
-                        <button class="aboutMe">About Me</button>
-                        <button class="hireMe">Hire Me</button>
+                        <button class="aboutMe">A propos de moi</button>
+                        <button class="hireMe">contactez moi</button>
                     </div>
                 </div>
             </div>
@@ -415,8 +422,8 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="button" style="color: #333;">
-                        <button class="aboutMe">About Me</button>
-                        <button class="hireMe">Hire Me</button>
+                        <button class="aboutMe">A propos de moi</button>
+                        <button class="hireMe">contactez moi</button>
                     </div>
                 </div>
             </div>
@@ -434,11 +441,11 @@
         
         <div class="row">
             <form action="">
-                <input type="text" placeholder="name" class="box">
+                <input type="text" placeholder="nom" class="box">
                 <input type="email" placeholder="email" class="box">
-                <input type="number" placeholder="number" class="box">
+                <input type="tel" placeholder="tel" class="box">
                 <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
-                <input type="submit" value="send message" class="btn">
+                <a href="#"><button ><input type="submit" value="envoyer un message" class="btn"></button>
             </form>
             <div class="image">
                 <img src="{{asset('myFarm/images/pharmacien-afro-americain-travaillant-pharmacie-pharmacie-hopital-soins-sante-africains.jpg')}}" alt="">

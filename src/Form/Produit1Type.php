@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Produit;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -16,6 +17,7 @@ class Produit1Type extends AbstractType
             ->add('nom')
             ->add('image')
             ->add('prix')
+            
         ;
     }
 

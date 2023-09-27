@@ -27638,7 +27638,7 @@ text.highcharts-drilldown-data-label {
     min-width: 100%;
     min-height: 100vh;
     background: #1abc9c;
-    background-image: url("../images/auth/fille-docteur-medecine-travaillant-microscope-jeune-femme-scientifique-faisant-recherches-vaccins.jpg");
+    background-image: url("../images/auth/bouteilles-medicaments-kit-medical-domicile.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -27652,11 +27652,13 @@ text.highcharts-drilldown-data-label {
     min-width: 100%;
     min-height: 100vh;
     background: #1abc9c;
-    background-image: url("../images/auth/femme-noire-stethoscope.jpg");
+    background-image: url("../images/auth/pharmacien-afro-americain-travaillant-pharmacie-pharmacie-hopital-soins-sante-africains.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    
 }
+
 @media (min-width: 1200px) {
     .auth-wrapper .container {
         max-width: 1140px;

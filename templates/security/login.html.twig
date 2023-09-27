@@ -46,10 +46,10 @@
 							<hr>
 							
 							<div class="form-group mb-3">
-								<input type="email" class="form-control" name="email" id="Email" placeholder="Email address" autocomplete="email" value="{{ last_username }}" required autofocus>
+								<input type="email" class="form-control" name="email" id="Email" placeholder="adresse Email" autocomplete="email" value="{{ last_username }}" required autofocus>
 							</div>
 							<div class="form-group mb-4">
-								<input type="password" name="password" class="form-control" id="Password" placeholder="Password" autocomplete="current-password" required>
+								<input type="password" name="password" class="form-control" id="Password" placeholder="Mot de passe" autocomplete="current-password" required>
 							</div>
 							<input type="hidden" name="_csrf_token"
 								value="{{ csrf_token('authenticate') }}"
@@ -58,11 +58,11 @@
 								<input type="checkbox" class="custom-control-input" id="customCheck1">
 								<label class="custom-control-label" for="customCheck1">Save credentials.</label>
 							</div>
-							<button class="btn btn-block btn-primary mb-4" type="submit">Signin</button>
+							<button class="btn btn-block btn-primary mb-4" type="submit">se connecter</button>
 							<hr>
-							<p class="mb-2 text-muted">Forgot password? <a href="auth-reset-password.html" class="f-w-400">Reset</a></p>
-							<p class="mb-0 text-muted">Don’t have an account? <a href="{{path('app_register')}}" class="f-w-400 text-white">Signup</a></p>
-							<p class="mb-0 text-muted">Back to <a href="{{path('app_site')}}" class="f-w-400 text-muted">Web Site</a></p>
+							<p class="mb-2 text-muted">Mot de passe oublié? <a href="auth-reset-password.html" class="f-w-400">Reset</a></p>
+							<p class="mb-0 text-muted">vous sohaitez creer un compte? <a href="{{path('app_register')}}" class="f-w-400 text-white">s'inscrire</a></p>
+							<p class="mb-0 text-muted">Retour au <a href="{{path('app_site')}}" class="f-w-400 text-muted"> Site</a></p>
 						</form>
 					</div>
 				</div>
