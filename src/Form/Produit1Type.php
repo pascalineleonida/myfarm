@@ -17,6 +17,7 @@ class Produit1Type extends AbstractType
             ->add('nom')
             ->add('image')
             ->add('prix')
+            ->add('title')
             
         ;
     }

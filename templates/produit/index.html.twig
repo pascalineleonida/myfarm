@@ -4,6 +4,9 @@
 
 {% block body %}
     <h1>Produit index</h1>
+    <div>
+        <a href="{{ path('app_produit_new') }}" class="btn btn-primary float-right mb-3">Create new</a>
+    </div>
 
     <table class="table">
         <thead>
@@ -13,6 +16,7 @@
                 <th>Nom</th>
                 <th>Image</th>
                 <th>Prix</th>
+                <th>title</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -24,6 +28,7 @@
                 <td>{{ produit.nom }}</td>
                 <td>{{ produit.image }}</td>
                 <td>{{ produit.prix }}</td>
+                <td>{{ produit.title }}</td>
                 <td>
                     <a href="{{ path('app_produit_show', {'id': produit.id}) }}">show</a>
                     <a href="{{ path('app_produit_edit', {'id': produit.id}) }}">edit</a>
