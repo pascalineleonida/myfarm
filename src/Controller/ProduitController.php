@@ -21,7 +21,6 @@ class ProduitController extends AbstractController
             'produits' => $produitRepository->findAll(),
         ]);
     }
-
     #[Route('/new', name: 'app_produit_new', methods: ['GET', 'POST'])]
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {

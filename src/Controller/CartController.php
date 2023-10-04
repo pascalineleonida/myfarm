@@ -23,9 +23,10 @@ class CartController extends AbstractController
         // On "fabrique" les données
         $dataPanier = [];
         $total = 0;
-
+        
         foreach($panier as $id => $quantite){
             $produit = $productsRepository->find($id);
+           
             $dataPanier[] = [
                 "produit" => $produit,
                 "quantite" => $quantite

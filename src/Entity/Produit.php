@@ -29,6 +29,9 @@ class Produit
     #[ORM\Column(length: 255, nullable:true)]
     private ?string $title = null;
 
+    #[ORM\Column(length: 255)]
+    private ?string $Description = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -86,6 +89,7 @@ class Produit
 
         return $this;
     }
+    
 
     public function getTitle(): ?string
     {
@@ -98,4 +102,17 @@ class Produit
 
         return $this;
     }
+    public function getDescription(): ?string
+    {
+        return $this->Description;
+    }
+
+    public function setDescription(string $Description): static
+    {
+        $this->Description = $Description;
+
+        return $this;
+    }
+
+   
 }

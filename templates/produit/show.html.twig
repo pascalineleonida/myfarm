@@ -21,11 +21,17 @@
             </tr>
             <tr>
                 <th>Image</th>
-                <td>{{ produit.image }}</td>
+                <td>
+                    <img src= {{asset('myFarm/images/' ~ produit.image)}} width='100%'>
+                </td>
             </tr>
             <tr>
                 <th>Prix</th>
                 <td>{{ produit.prix }}</td>
+            </tr>
+            <tr>
+                <th>description</th>
+                <td>{{ produit.description }}</td>
             </tr>
         </tbody>
     </table>

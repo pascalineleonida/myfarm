@@ -14,6 +14,7 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/detail')]
 class DetailController extends AbstractController
 {
+
     #[Route('/', name: 'app_detail_index', methods: ['GET'])]
     public function index(DetailRepository $detailRepository): Response
     {

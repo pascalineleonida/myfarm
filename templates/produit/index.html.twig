@@ -5,7 +5,7 @@
 {% block body %}
     <h1>Produit index</h1>
     <div>
-        <a href="{{ path('app_produit_new') }}" class="btn btn-primary float-right mb-3">Create new</a>
+        <a href="{{ path('app_produit_new',) }}" class="btn btn-primary float-right mb-3">Create new</a>
     </div>
 
     <table class="table">
@@ -17,6 +17,7 @@
                 <th>Image</th>
                 <th>Prix</th>
                 <th>title</th>
+                <th>description</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -26,9 +27,12 @@
                 <td>{{ produit.id }}</td>
                 <td>{{ produit.code }}</td>
                 <td>{{ produit.nom }}</td>
-                <td>{{ produit.image }}</td>
+                <td>
+                    <img src= {{asset('myFarm/images/' ~ produit.image)}} width='100%'>
+                </td>
                 <td>{{ produit.prix }}</td>
                 <td>{{ produit.title }}</td>
+                <td>{{ produit.description }}</td>
                 <td>
                     <a href="{{ path('app_produit_show', {'id': produit.id}) }}">show</a>
                     <a href="{{ path('app_produit_edit', {'id': produit.id}) }}">edit</a>
@@ -41,6 +45,4 @@
         {% endfor %}
         </tbody>
     </table>
-
-    <a href="{{ path('app_produit_new') }}">Create new</a>
 {% endblock %}

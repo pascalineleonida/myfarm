@@ -69,7 +69,8 @@
         </div>
     </section>
     <section class="products" id="products">
-        <h1 class="heading">Nos <span>Products</span></h1>
+        <h1 class="heading">Nos <span>Produits
+        </span></h1>
         <div class="box-container">
         {% for produit in produits %}
             
@@ -78,8 +79,8 @@
                     <img src="{{asset('myFarm/images/paracetamol.jpg')}}" alt="">
 
                     <div class="icons">
-                      <a href="{{path("cart_add",{id: produit.id})}}" class="btn btn-success">
-                        <i class="bi-bi-card-plus">Ajouter</i>
+                      <a href="{{ path ('route_produit', {id: produit.id}) }}" class="btn btn-success">
+                        <i class="bi-bi-card-plus">voir detail</i>
                      </a>
                     </div> 
                      {# <div class="icons">

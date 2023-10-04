@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{{ produit.title }} <br>
+{{ produit.description }} <br>
+{{ produit.prix }} <br>
+{{ produit.image }} <br>
+<div class="icons">
+    <a href="{{path("cart_add",{id: produit.id})}}" class="btn btn-success">
+        <i class="bi-bi-card-plus">Ajouter</i>
+    </a>
+</div>
+{% endblock %}
